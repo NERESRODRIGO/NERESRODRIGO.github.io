@@ -15,35 +15,49 @@
   <nav id="topo" class="navbar navbar-expand-lg navbar-dark bg-dark">  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
       <span class="navbar-toggler-icon"></span> </button>
-        <a class="navbar-brand" href="#">R N</a> 
+        <a class="navbar-brand handwriting" href="#" id="">R N</a> 
         <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
           <ul class="navbar-nav mr-auto"> 
             <li class="nav-item active"> 
               <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a> </li>  
 
-            <li class="nav-item"> <a class="nav-link" href="#">Quem sou?</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#quemsou">Quem sou?</a> </li>
 
-            <li class="nav-item"> <a class="nav-link" href="#">Experiências</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#experiencias">Experiências</a> </li>
 
-            <li class="nav-item"> <a class="nav-link" href="#">Portfólio</a> </li> 
+            <li class="nav-item"> <a class="nav-link" href="#portfolio">Portfólio</a> </li> 
 
-            <li class="nav-item"> <a class="nav-link" href="#">Contato</a> </li>  
+            <li class="nav-item"> <a class="nav-link" href="#contato">Contato</a> </li>  
       </div> 
     </nav>
     <!-- FIM DA NAVBAR -->
 
 <div class="container">
-  <div class="text-center"> 
-    <img src="img/profile.jpg" class="rounded img-thumbnail" alt="Imagem de perfil de Rodrigo Neres" width="140rem"> 
+  <div class="row">
+
+  <div class="col text-center" id="perfil"> 
+    <img src="img/profile.jpg" class="" alt="Imagem de perfil de Rodrigo Neres" width="140rem"> 
   </div>
 
-  <div>
+  <div class="col text-center">
+    <p class="handwriting" id="nome">Rodrigo Neres</p>
+    <ul id="social">
+      <li><a href="https://www.linkedin.com/in/rodrigo-neres-da-silva-59281b53"><img src="img/social/linkedin.png" alt="Ícone para o linkedin" width="40"></a></li>
+      <li><a href="https://www.facebook.com/rodrigo.37neres"><img src="img/social/facebook.png" alt="Ícone para o facebook" width="40"></a></li>
+      <li><a href="https://www.instagram.com/rodrigo_neres"><img src="img/social/instagram.png" alt="Ícone para o instagram" width="40"></a></li>
+      <li><a href="https://twitter.com/rodrigo_37neres" target="blank"><img src="img/social/twitter.png" alt="Ícone para o twitter" width="40"></a></li>
+      <!--<li><a href=""><img src="/img/social/">Website</a></li>-->
+    </ul>
+  </div>
+</div>
+
+  <div id="quemsou">
     <h4>Quem sou?</h4>
       <p>Atualmente trabalho como Técnico em Informática na Prefeitura Municipal de Registro/SP dividindo meu tempo entre desenvolvimento web e auxiliando na evolução da Infraestrutura.</p>
       <p>E também estou desenvolvendo side-projects para satisfação e crescimento pessoal.</p>
   </div>
 
-  <div>
+  <div id="experiencias">
     <h4>Experiências</h4>
       <ul>
         <li>Analista de Suporte N1 - ALL - América Latina Logística</li>
@@ -52,10 +66,11 @@
       </ul>
   </div>
 
+  <div id="portfolio">
     <h4>Portfólio</h4>
     <div class="row">
       <div class="col-md-4 card text-center" style="width: 10rem;"> 
-        <img src="img/bolodeque.jpg" class="card-img-top" alt="Imagem com uma frase escrita dizendo Bolo de quê?">        
+        <img src="img/portfolio/bolodeque.jpg" class="card-img-top" alt="Imagem com uma frase escrita dizendo Bolo de quê?">        
         <div class="card-body"> 
           <h5 class="card-title">Bolo de quê?</h5>
         </div>
@@ -66,7 +81,7 @@
       </div>
 
       <div class="col-md-4 card text-center" style="width: 10rem;"> 
-        <img src="" class="card-img-top" alt="Imagem com uma caneta escrevendo simulando uma assinatura">        
+        <img src="img/portfolio/signature.png" class="card-img-top" alt="Imagem com uma caneta escrevendo simulando uma assinatura">        
         <div class="card-body"> 
           <h5 class="card-title">Signature</h5>
         </div>
@@ -76,17 +91,8 @@
         </div> 
       </div>
     </div>
-
-    <div>
-      <h4>Contato:</h4>
-          <ul id="social">
-            <li><a href="https://www.linkedin.com/in/rodrigo-neres-da-silva-59281b53"><img src="img/social/linkedin.png" alt="Ícone para o linkedin" width="40"></a></li>
-            <li><a href="https://www.facebook.com/rodrigo.37neres"><img src="img/social/facebook.png" alt="Ícone para o facebook" width="40"></a></li>
-            <li><a href="https://www.instagram.com/rodrigo_neres"><img src="img/social/instagram.png" alt="Ícone para o instagram" width="40"></a></li>
-            <li><a href="https://twitter.com/rodrigo_37neres" target="blank"><img src="img/social/twitter.png" alt="Ícone para o twitter" width="40"></a></li>
-            <!--<li><a href=""><img src="/img/social/">Website</a></li>-->
-          </ul>
-    </div>
+  </div>
+    
 
 </div>
 <!--
