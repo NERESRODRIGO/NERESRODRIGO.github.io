@@ -28,3 +28,12 @@
 .topo {
     margin:10px;
 }
+#mensagem {
+    margin-bottom:10px;
+}
+h4{ display: inline-block;}
+#skills li{ display: inline; }
+#skills li{
+    padding: 2px 10px;
+    display: inline-block;
+}
