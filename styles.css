@@ -23,8 +23,8 @@ body {
 /*#skills{
     white-space: nowrap;
 }*/
-#social li{ display: inline; }
-#social li a {
+#contato li{ display: inline; }
+#contato li a {
     padding: 2px 10px;
     display: inline-block;
 }
