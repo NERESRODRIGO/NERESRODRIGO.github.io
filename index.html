@@ -1,86 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- CSS only --> 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <!-- JS, Popper.js, and jQuery --> 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
   <title>Rodrigo Neres</title>
 </head>
+
 <body>
   <!--NAVBAR-->
-  <nav id="topo" class="navbar navbar-expand-lg navbar-dark bg-dark">  
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+  <nav id="topo" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span> </button>
-        <a class="navbar-brand handwriting" href="#" id="">R N</a> 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-          <ul class="navbar-nav mr-auto"> 
-            <li class="nav-item active"> 
-              <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a> </li>  
 
-            <li class="nav-item"> <a class="nav-link" href="#quemsou">Quem sou?</a> </li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="container">
+        <a class="navbar-brand handwriting" href="#" id="">R N</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a>
+          </li>
 
-            <li class="nav-item"> <a class="nav-link" href="#experiencias">Experiências</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#quemsou">Quem sou?</a> </li>
 
-            <li class="nav-item"> <a class="nav-link" href="#portfolio">Portfólio</a> </li> 
+          <li class="nav-item"> <a class="nav-link" href="#experiencias">Experiências</a> </li>
 
-            <li class="nav-item"> <a class="nav-link" href="#contato">Contato</a> </li>  
-      </div> 
-    </nav>
-    <!-- FIM DA NAVBAR -->
+          <li class="nav-item"> <a class="nav-link" href="#portfolio">Portfólio</a> </li>
 
-<div class="container">
+          <li class="nav-item"> <a class="nav-link" href="#contato">Contato</a> </li>
+      </div>
+    </div>
+  </nav>
+  <!-- FIM DA NAVBAR -->
+
+
+  <div class="container">
 
     <div class="topo">
       <div class="row justify-content-center">
-        <div class="col-md-2 text-center" id="perfil"> 
-          <img src="img/profile.jpg" class="" alt="Imagem de perfil de Rodrigo Neres" width="140rem"> 
+        <div class="col-md-2 text-center m-5" id="perfil">
+          <img src="img/profile.jpg" class="" alt="Imagem de perfil de Rodrigo Neres" width="200rem">
         </div>
 
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center m-5">
           <p class="handwriting" id="nome">Rodrigo Neres</p>
-          <ul id="social">
-            <li><a href="https://www.linkedin.com/in/rodrigo-neres-da-silva-59281b53"><img src="img/social/linkedin.png" alt="Ícone para o linkedin" width="40"></a></li>
-            <li><a href="https://www.facebook.com/rodrigo.37neres"><img src="img/social/facebook.png" alt="Ícone para o facebook" width="40"></a></li>
-            <li><a href="https://www.instagram.com/rodrigo_neres"><img src="img/social/instagram.png" alt="Ícone para o instagram" width="40"></a></li>
-            <li><a href="https://twitter.com/rodrigo_37neres" target="blank"><img src="img/social/twitter.png" alt="Ícone para o twitter" width="40"></a></li>
-            <!--<li><a href=""><img src="/img/social/">Website</a></li>-->
-          </ul>
+          <p class="elegant">Desenvolvedor Web</p>
+
         </div>
       </div>
     </div>
     <!--FIM TOPO-->
-    <h4>Quem sou?</h4>
+
     <div id="quemsou">
+      <h3 class="titles">Quem sou?</h3>
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-          
-            <span>Atualmente trabalho como Técnico em Informática na Prefeitura Municipal de Registro/SP dividindo meu tempo entre estudos em Desenvolvimento Web e DEVOPS e também auxiliando na evolução da Infraestrutura. E dedico todo tempo que posso desenvolvendo side-projects para satisfação e crescimento pessoal.</span>
+          <br>
+          <span>Atualmente trabalho como <strong>Técnico em Informática na Prefeitura Municipal de Registro/SP </strong>dividindo meu
+            tempo entre estudos em Desenvolvimento Web e também auxiliando na evolução da Infraestrutura. E dedico todo
+            tempo que posso desenvolvendo side-projects para satisfação e crescimento pessoal.</span>
+          <br>
+          <br>
         </div>
       </div>
     </div>
     <!--FIM QUEM SOU-->
-    <h4>Experiências</h4>
-  <div id="experiencias">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <ul>
-          <li>Analista de Suporte N1 - ALL - América Latina Logística</li>
-          <li>Analista de Segurança da Informação - BTM Systems</li>
-          <li>Técnico em Informática - Prefeitura Municipal de Registro/SP</li>
-        </ul>
+
+    <div id="experiencias">
+      <h3 class="titles">Experiências</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <br>
+          <ul>
+            <li>Analista de Suporte N1 - ALL - América Latina Logística</li>
+            <li>Analista de Segurança da Informação - BTM Systems</li>
+            <li>Técnico em Informática - Prefeitura Municipal de Registro/SP</li>
+          </ul>
+          <br>
+        </div>
       </div>
     </div>
-  </div>
-  <!--FIM EXPERIENCIAS-->
-  <h4>Portfólio</h4>
-  <div id="portfolio">
-    <div class="row justify-content-center">
-     <!--<div class="col-sm-6 col-md-4">
+    <!--FIM EXPERIENCIAS-->
+
+    <div id="portfolio">
+      <h3 class="titles">Portfólio</h3>
+      <br>
+      <div class="row justify-content-center">
+        <!--<div class="col-sm-6 col-md-4">
       <div class="card text-center py-2"> 
         <img src="img/portfolio/bolodeque.jpg" class="card-img-top" alt="Imagem com uma frase escrita dizendo Bolo de quê?">        
         <div class="card-body"> 
@@ -92,23 +113,24 @@
         </div> 
       </div>
      </div>-->
-    
-     <div class="col-sm-6 col-md-4">
-      <div class="card text-center py-2"> 
-        <img src="img/portfolio/signature.png" class="card-img-top" alt="Imagem com uma caneta escrevendo simulando uma assinatura">        
-        
-        <div class="card-body"> 
-          <h5 class="card-title">Signature</h5>
-        </div>
-        
-        <div class="card-footer"> 
-          <p class="card-text">Sistema para gerar assinaturas de e-mail em jpg.</p> 
-          <a href="http://assinatura1.atwebpages.com/" class="btn btn-primary">Acesse</a> 
-        </div> 
-      </div>
-     </div>
 
-      <!--<div class="col-md-4 card text-center py-2" style="width: 10rem;"> 
+        <div class="col-sm-6 col-md-4">
+          <div class="card text-center">
+            <img src="img/portfolio/signature.png" class="card-img-top p-3"
+              alt="Imagem com uma caneta escrevendo simulando uma assinatura">
+
+            <div class="card-body">
+              <h5 class="card-title handwriting">Signature</h5>
+            </div>
+
+            <div class="card-footer">
+              <p class="card-text">Sistema para gerar assinaturas de e-mail em jpg.</p>
+              <a href="http://assinatura1.atwebpages.com/" class="btn btn-primary">Acesse</a>
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="col-md-4 card text-center py-2" style="width: 10rem;"> 
         <img src="img/portfolio/signature.png" class="card-img-top" alt="Imagem com uma caneta escrevendo simulando uma assinatura">        
         <div class="card-body"> 
           <h5 class="card-title">Sisbase</h5>
@@ -118,40 +140,118 @@
           <a href="#" class="btn btn-primary">Acesse</a> 
         </div> 
       </div>-->
+      </div>
     </div>
-  </div>
-  <!--FIM PORTFOLIO-->
-  <h4>Skills</h4>  
- <div class="row justify-content-center">
-   <div id="skills">
-     
-     <ul>
-       <li><img src="img/skills/html5.svg" width="30">HTML 5</li>
-       <li><img src="img/skills/css-3.svg" width="30">CSS 3</li>
-       <li><img src="img/skills/javascript.svg" width="30">Javascript</li>
-       <!--<li>Bootstrap</li>-->
-       <li><img src="img/skills/php.svg" width="30">PHP</li>
-     </ul>
-   </div>
- </div>
-  <!--Form de contato-->
-  <!--
-    <div class="row justify-content-center">
-      <div class="col-md-6">  
-        <div class="form-group">
-          <form>
-            <label for="mensagem">Envie-me uma mensagem: </label>
-            <textarea class="form-control" id="mensagem" rows="3"></textarea>
-            <button type="button" class="btn btn-primary">Enviar</button>
-          </form>
+    <!--FIM PORTFOLIO-->
+    <br><br>
+    <div id="skills">
+    <h3 class="titles">Skills</h3>
+    <div class="row justify-content-center" >
+      
+      <!--CARD HTML5-->
+      <div class="col-sm-6 col-md-2">
+        <div class="card text-center">
+          <img src="img/skills/html5.svg" class="card-img-top img-fluid p-3"
+            alt="Logotipo do html 5 com um escudo e um número 5 ao meio">
+          <div class="card-body">
+            <h5 class="card-title">HTML 5 </h5>
+          </div>
+          <div class="card-footer">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5" class="btn btn-primary">Site Oficial</a>
+          </div>
         </div>
       </div>
-    </div>-->
+      <!--FIM CARD HTML5-->
 
 
+      <!--CARD CSS 3-->
+      <div class="col-sm-6 col-md-2">
+        <div class="card text-center">
+          <img src="img/skills/css-3.svg" class="card-img-top  img-fluid p-3"
+            alt="Logotipo do CSS 3 com um escudo e um número 3 ao meio">
+          <div class="card-body">
+            <h5 class="card-title">CSS 3 </h5>
+          </div>
+          <div class="card-footer">
+            <a href="https://www.w3.org/Style/CSS/#specs" class="btn btn-primary">Site Oficial</a>
+          </div>
+        </div>
+      </div>
+      <!---FIM CARD CSS 3-->
+
+
+      <!--CARD JAVASCRIPT-->
+      <div class="col-sm-6 col-md-2">
+        <div class="card text-center">
+          <img src="img/skills/javascript.svg" class="card-img-top img-fluid p-3"
+            alt="Logotipo do html 5 com um escudo e um número 5 ao meio">
+          <div class="card-body">
+            <h5 class="card-title">JAVASCRIPT</h5>
+          </div>
+          <div class="card-footer">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="btn btn-primary">Site Oficial</a>
+          </div>
+        </div>
+      </div>
+      <!--FIM CARD JAVASCRIPT-->
+
+      <!--CARD PHP-->
+      <div class="col-sm-6 col-md-2">
+        <div class="card text-center">
+          <img src="img/skills/php.svg" class="card-img-top img-fluid p-3"
+            alt="Logotipo do CSS 3 com um escudo e um número 3 ao meio">
+          <div class="card-body">
+            <h5 class="card-title">PHP</h5>
+          </div>
+          <div class="card-footer">
+            <a href="https://www.php.net/" class="btn btn-primary">Site Oficial</a>
+          </div>
+        </div>
+      </div>
+      <!--FIM CARD PHP-->
+    </div>
+  </div>
+
+  <br><br>
+  <!--FORM DE CONTATO-->
+  <div id="contato">
+    <h3 class="titles">Contato</h3>
+      <div class="row justify-content-center">
+            <div class="col-md-6">  
+                  <div class="form-group">
+                    <form>
+                      <label for="mensagem" class="elegant">Envie-me uma mensagem: </label>
+                      <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                  </div>
+            </div>
+      </div>
+  </div>
+  <!--FIM FORM DE CONTATO-->
+
+
+  <div class="container text-center">
+    <div class="footer text-center">
+      <br><br>
+    
+      <ul class="m-3" id="social">
+        <li><a href="https://www.linkedin.com/in/rodrigo-neres-da-silva-59281b53" target="blank"><img src="img/social/linkedin.png"
+              alt="Ícone para o linkedin" width="40"></a></li>
+        <li><a href="https://www.facebook.com/rodrigo.37neres" target="blank"><img src="img/social/facebook.png"
+              alt="Ícone para o facebook" width="40"></a></li>
+        <li><a href="https://www.instagram.com/rodrigo_neres" target="blank"><img src="img/social/instagram.png"
+              alt="Ícone para o instagram" width="40"></a></li>
+        <li><a href="https://twitter.com/rodrigo_37neres" target="blank"><img src="img/social/twitter.png"
+              alt="Ícone para o twitter" width="40"></a></li>
+        <!--<li><a href=""><img src="/img/social/">Website</a></li>-->
+      </ul>
+
+    &copy Feito por <a href="#">Rodrigo Neres</a>
+  </div>
 </div>
-<!--
+  <!--
 <a href="#topo"> Voltar ao topo </a>
 </body>-->
-</html>
 
+</html>

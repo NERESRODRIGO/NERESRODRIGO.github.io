@@ -1,7 +1,9 @@
-#social li{ display: inline; }
-#social li a {
-    padding: 2px 10px;
-    display: inline-block;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 @font-face {
@@ -12,9 +14,23 @@
 .handwriting {
     font-family: mawns, Arial, Helvetica, sans-serif;
 }
+.elegant{
+    font: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    flex-wrap: nowrap;
+}
+
+/*#skills{
+    white-space: nowrap;
+}*/
+#social li{ display: inline; }
+#social li a {
+    padding: 2px 10px;
+    display: inline-block;
+}
 
 #nome {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 #perfil img{
@@ -31,9 +47,7 @@
 #mensagem {
     margin-bottom:10px;
 }
-h4{ display: inline-block;}
-#skills li{ display: inline; }
-#skills li{
-    padding: 2px 10px;
+h3{ 
+    font-family: mawns;
     display: inline-block;
 }
