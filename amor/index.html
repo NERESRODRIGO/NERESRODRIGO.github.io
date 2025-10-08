@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Surpresa Para Você</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Para o Amor da Minha Vida</h1>
+        
+        <div class="slideshow-container">
+            <img id="foto" src="foto1.png" alt="Nossa Memória Especial">
+            <p id="texto-amor">Para a mulher que ilumina todos os meus dias. Este é o começo da nossa história.</p>
+        </div>
+
+        <button id="botao-prosseguir">Prosseguir</button>
+    </div>
+
+    <script>
+        // Array com as informações de cada foto e texto
+        const surpresas = [
+            { foto: "foto1.png", texto: "Onde tudo começou. O primeiro de incontáveis sorrisos que você me deu." },
+            { foto: "foto2.png", texto: "Cada aventura ao seu lado é o meu lugar favorito no mundo." },
+            { foto: "foto3.png", texto: "Seu abraço é o meu lar. Nele, encontro paz e a certeza do nosso amor." },
+            { foto: "foto4.png", texto: "Lembro deste dia como se fosse hoje. Você estava radiante!" },
+            { foto: "foto5.png", texto: "Estamos construindo uma vida juntos." },
+            { foto: "foto6.png", texto: "Obrigado por cada momento de cumplicidade e por me entender tão bem." },
+            { foto: "foto7.png", texto: "Viajar com você é redescobrir a beleza do mundo através do seu olhar." },
+            { foto: "foto8.png", texto: "Nosso amor floresceu e se tornou a coisa mais linda que já cultivei." },
+            { foto: "foto9.png", texto: "Você não é apenas meu amor, é minha melhor amiga e confidente." },
+            { foto: "foto10.png", texto: "Que venham mais mil anos ao seu lado. Feliz aniversário de casamento, meu amor! Eu te amo." }
+        ];
+
+        // Variável para controlar o slide atual
+        let slideAtual = 0;
+
+        // Pegando os elementos do HTML
+        const imagemElemento = document.getElementById("foto");
+        const textoElemento = document.getElementById("texto-amor");
+        const botao = document.getElementById("botao-prosseguir");
+
+        // Função para mostrar o próximo slide
+        function proximoSlide() {
+            // Adiciona classe para efeito de fade-out
+            imagemElemento.classList.add('fade-out');
+            textoElemento.classList.add('fade-out');
+
+            setTimeout(() => {
+                // Incrementa o contador do slide
+                slideAtual++;
+
+                // Atualiza a imagem e o texto
+                imagemElemento.src = surpresas[slideAtual].foto;
+                textoElemento.innerText = surpresas[slideAtual].texto;
+                
+                // Remove a classe para efeito de fade-in
+                imagemElemento.classList.remove('fade-out');
+                textoElemento.classList.remove('fade-out');
+                
+                // Se for o último slide, muda o texto do botão e o desabilita
+                if (slideAtual === surpresas.length - 1) {
+                    botao.innerText = "Fim!";
+                    botao.disabled = true;
+                }
+            }, 500); // Tempo igual à duração da transição do CSS
+        }
+
+        // Adiciona o evento de clique ao botão
+        botao.addEventListener("click", proximoSlide);
+
+        // Carrega o primeiro slide ao iniciar a página
+        imagemElemento.src = surpresas[0].foto;
+        textoElemento.innerText = surpresas[0].texto;
+
+    </script>
+</body>
+</html>
